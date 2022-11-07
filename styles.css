@@ -6,6 +6,9 @@ body{
     margin: 0;
 }
 
+.maintext{
+    text-align: center;
+}
 .container{
     display:grid;
     grid-template-columns:  clamp(250px,15%,300px) repeat(2,1fr);
@@ -23,14 +26,31 @@ body{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px repeat(10, 50px);
-    justify-items: center;
-    align-items: center;
+    
 }
 .sidebarlogo{
     font-size: 35px;
+    font-weight: 800;
     grid-area: 1 / 1 / 2 / 1;
     color:white;
-    margin-top: -30px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.sublogo{
+    width:28px;
+}
+.sublogotext{
+    margin-left: 10px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .mainlogo{
@@ -42,8 +62,47 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
     grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+
 }
 
+
+.headertop{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 10px;
+}
+.headername{
+    font-size: 18px;
+    font-weight: 600;
+}
+.headfirsthalf{
+    display: flex;
+    gap:5px
+}
+
+.headsecondhalf{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+#search{
+    min-width: 400px;
+    padding: 6px;
+    border-radius: 15px;
+    background-color: #f1f5f9;
+    border-style: solid;
+    font-family: inherit;
+}
+
+
+.headerbottom{
+
+}
 .mainarea{
     border: 1px hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -51,3 +110,13 @@ body{
     grid-column: 2 / 4;
     grid-row: 2 /4;
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { 
+    font-size: 25px;
+    transition: 0.2s;
+    color: #e7e5e4;
+    text-decoration: none; 
+}
+a:active { text-decoration: none; }
