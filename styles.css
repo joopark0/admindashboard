@@ -131,6 +131,8 @@ body{
     background-color: #f0f9ff;
     grid-column: 2 / 4;
     grid-row: 2 /4;
+    display: flex;
+    gap:15px;
 }
 .lefthalf{
     display: flex;
@@ -140,6 +142,7 @@ body{
 .welcomecontainer{
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 .smtext{
     font-weight: 600;
@@ -175,9 +178,112 @@ body{
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { 
-    font-size: 25px;
+    font-size: 22px;
     transition: 0.2s;
     color: #e7e5e4;
     text-decoration: none; 
 }
 a:active { text-decoration: none; }
+
+
+
+.projectarea{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+
+}
+
+.mainside{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+}
+
+.matext{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cardcontainer{
+    display: grid;
+    width: 100%;
+    height: 96%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 14px;
+}
+.card{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(46, 124, 240, 0.4) -5px 5px, rgba(46, 130, 240, 0.3) -10px 10px, rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 6px;
+}
+
+.annarea, .trendarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 10px;
+}
+
+.anninfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 90%;
+}
+
+.anncards{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.anncardtitle{
+    font-size: 14px;
+    font-weight: 800;
+}
+.anncardinfo{
+    font-size: 12px;
+}
+.trendcardcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+}
+
+.trendcards{
+    flex:1;
+    background-color: white;
+    margin: 10px;
+    
+}
+
+.projecttitle{
+    font-weight: 700;
+    font-size: 18px;
+}
+.projectinfo{
+    font-size: 14px;
+}
